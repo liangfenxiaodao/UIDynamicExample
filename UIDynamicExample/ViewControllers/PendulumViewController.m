@@ -25,7 +25,6 @@
 
 - (void)loadView{
     self.view = [[PendulumView alloc]init];
-    NSLog(@"load view");
 }
 
 - (void)viewDidLoad

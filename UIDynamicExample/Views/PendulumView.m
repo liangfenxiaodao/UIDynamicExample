@@ -20,13 +20,7 @@
 }
 
 - (void)buildPendulum {
-    UIView *ballBearing = [[UIView alloc] initWithFrame:CGRectMake(0,0,40,40)];
-    ballBearing.backgroundColor = [UIColor lightGrayColor];
-    ballBearing.layer.cornerRadius = 10;
-    ballBearing.layer.borderColor = [UIColor grayColor].CGColor;
-    ballBearing.layer.borderWidth = 2;
-    ballBearing.center = CGPointMake(200, 300);
-    [self addSubview:ballBearing];
+;
 }
 
 - (void)addPendulumBehaviour {

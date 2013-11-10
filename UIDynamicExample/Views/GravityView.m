@@ -1,8 +1,9 @@
 #import "GravityViewController.h"
 #import "GravityView.h"
+#import "BallView.h"
 
 @implementation GravityView{
-    UIView *ballBearing;
+    UIView *ballView;
 }
 
 - (id)init {
@@ -17,18 +18,14 @@
 
 
 - (void)buildGravityItem {
-    ballBearing = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
-    ballBearing.backgroundColor = [UIColor lightGrayColor];
-    ballBearing.layer.cornerRadius = 10;
-    ballBearing.layer.borderColor = [UIColor grayColor].CGColor;
-    ballBearing.layer.borderWidth = 2;
-    ballBearing.center = CGPointMake(100, 40);
-    [self addSubview:ballBearing];
+    ballView = [[BallView alloc] init];
+    ballView.center = CGPointMake(100, 40);
+    [self addSubview:ballView];
 }
 
 - (void) addGravity {
     UIDynamicAnimator *animator = [[UIDynamicAnimator alloc] initWithReferenceView:self];
-    UIGravityBehavior *gravityBehaviour = [[UIGravityBehavior alloc] initWithItems:@[ballBearing]];
+    UIGravityBehavior *gravityBehaviour = [[UIGravityBehavior alloc] initWithItems:@[ballView]];
     [animator addBehavior:gravityBehaviour];
     self.animator = animator;
 }
