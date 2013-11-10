@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3686756C06ACC572235F87C3 /* GravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867E3A9988D686AA192D36 /* GravityViewController.m */; };
+		368675E8F0104D18D8B3C91F /* GravityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867320683C7687BA6B208F /* GravityView.m */; };
+		3686760E4E0A360237E4D10C /* PendulumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867E73E06B623AAE09F678 /* PendulumViewController.m */; };
 		3686775E1916DCD6540F2499 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 368671A593EC171709730665 /* MainViewController.m */; };
+		36867A44BC1B9F26E8380513 /* PendulumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 368675241E95B525DB75C981 /* PendulumView.m */; };
 		49C3E9D3182C3870002D8841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C3E9D2182C3870002D8841 /* Foundation.framework */; };
 		49C3E9D5182C3870002D8841 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C3E9D4182C3870002D8841 /* CoreGraphics.framework */; };
 		49C3E9D7182C3870002D8841 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C3E9D6182C3870002D8841 /* UIKit.framework */; };
@@ -20,8 +24,6 @@
 		49C3E9EE182C3870002D8841 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C3E9D6182C3870002D8841 /* UIKit.framework */; };
 		49C3E9F6182C3870002D8841 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49C3E9F4182C3870002D8841 /* InfoPlist.strings */; };
 		49C3E9F8182C3870002D8841 /* UIDynamicExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3E9F7182C3870002D8841 /* UIDynamicExampleTests.m */; };
-		49C3EA03182C3901002D8841 /* PendulumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3EA02182C3901002D8841 /* PendulumView.m */; };
-		49C3EA06182C3965002D8841 /* PendulumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C3EA05182C3965002D8841 /* PendulumViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,14 @@
 /* Begin PBXFileReference section */
 		36867196D14AE983965C51FC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		368671A593EC171709730665 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		36867200E3E8332FFD940E92 /* PendulumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendulumView.h; sourceTree = "<group>"; };
+		36867320683C7687BA6B208F /* GravityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityView.m; sourceTree = "<group>"; };
+		368673E18CE48D8F215866EF /* GravityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityView.h; sourceTree = "<group>"; };
+		368675241E95B525DB75C981 /* PendulumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendulumView.m; sourceTree = "<group>"; };
+		36867A73E53C89CFB59DA6C1 /* PendulumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendulumViewController.h; sourceTree = "<group>"; };
+		36867ABDEE09D9542C58E46D /* GravityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityViewController.h; sourceTree = "<group>"; };
+		36867E3A9988D686AA192D36 /* GravityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityViewController.m; sourceTree = "<group>"; };
+		36867E73E06B623AAE09F678 /* PendulumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendulumViewController.m; sourceTree = "<group>"; };
 		49C3E9CF182C3870002D8841 /* UIDynamicExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDynamicExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C3E9D2182C3870002D8841 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		49C3E9D4182C3870002D8841 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,10 +63,6 @@
 		49C3E9F3182C3870002D8841 /* UIDynamicExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIDynamicExampleTests-Info.plist"; sourceTree = "<group>"; };
 		49C3E9F5182C3870002D8841 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		49C3E9F7182C3870002D8841 /* UIDynamicExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDynamicExampleTests.m; sourceTree = "<group>"; };
-		49C3EA01182C3901002D8841 /* PendulumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendulumView.h; sourceTree = "<group>"; };
-		49C3EA02182C3901002D8841 /* PendulumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendulumView.m; sourceTree = "<group>"; };
-		49C3EA04182C3965002D8841 /* PendulumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendulumViewController.h; sourceTree = "<group>"; };
-		49C3EA05182C3965002D8841 /* PendulumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendulumViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3686760C54320CFEC30B51EC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				36867200E3E8332FFD940E92 /* PendulumView.h */,
+				368675241E95B525DB75C981 /* PendulumView.m */,
+				36867320683C7687BA6B208F /* GravityView.m */,
+				368673E18CE48D8F215866EF /* GravityView.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		36867A4F6D6D00F660D17072 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				36867ABDEE09D9542C58E46D /* GravityViewController.h */,
+				36867E3A9988D686AA192D36 /* GravityViewController.m */,
+				36867A73E53C89CFB59DA6C1 /* PendulumViewController.h */,
+				36867E73E06B623AAE09F678 /* PendulumViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		49C3E9C6182C3870002D8841 = {
 			isa = PBXGroup;
 			children = (
@@ -118,14 +146,12 @@
 			children = (
 				49C3E9E1182C3870002D8841 /* AppDelegate.h */,
 				49C3E9E2182C3870002D8841 /* AppDelegate.m */,
-				49C3EA04182C3965002D8841 /* PendulumViewController.h */,
-				49C3EA05182C3965002D8841 /* PendulumViewController.m */,
 				49C3E9E4182C3870002D8841 /* Images.xcassets */,
 				49C3E9D9182C3870002D8841 /* Supporting Files */,
-				49C3EA01182C3901002D8841 /* PendulumView.h */,
-				49C3EA02182C3901002D8841 /* PendulumView.m */,
 				368671A593EC171709730665 /* MainViewController.m */,
 				36867196D14AE983965C51FC /* MainViewController.h */,
+				36867A4F6D6D00F660D17072 /* ViewControllers */,
+				3686760C54320CFEC30B51EC /* Views */,
 			);
 			path = UIDynamicExample;
 			sourceTree = "<group>";
@@ -255,9 +281,11 @@
 			files = (
 				49C3E9E3182C3870002D8841 /* AppDelegate.m in Sources */,
 				49C3E9DF182C3870002D8841 /* main.m in Sources */,
-				49C3EA03182C3901002D8841 /* PendulumView.m in Sources */,
-				49C3EA06182C3965002D8841 /* PendulumViewController.m in Sources */,
 				3686775E1916DCD6540F2499 /* MainViewController.m in Sources */,
+				3686756C06ACC572235F87C3 /* GravityViewController.m in Sources */,
+				3686760E4E0A360237E4D10C /* PendulumViewController.m in Sources */,
+				36867A44BC1B9F26E8380513 /* PendulumView.m in Sources */,
+				368675E8F0104D18D8B3C91F /* GravityView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
