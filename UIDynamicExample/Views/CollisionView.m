@@ -1,8 +1,9 @@
-#import "GravityAndBounceView.h"
+#import "CollisionView.h"
 #import "BallView.h"
 
-@implementation GravityAndBounceView {
+@implementation CollisionView {
     UIView *ballView;
+    UIDynamicAnimator *_animator;
 }
 
 - (id)init {
@@ -24,5 +25,12 @@
 - (void)addDynamicBehaviour {
     UIDynamicAnimator *animator = [[UIDynamicAnimator alloc] initWithReferenceView:self];
     UIGravityBehavior *gravityBehavior = [[UIGravityBehavior alloc] initWithItems:@[ballView]];
+    [animator addBehavior:gravityBehavior];
+
+    UICollisionBehavior *collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[ballView]];
+    [collisionBehavior setTranslatesReferenceBoundsIntoBoundary:YES];
+    [animator addBehavior:collisionBehavior];
+    _animator = animator;
 }
+
 @end

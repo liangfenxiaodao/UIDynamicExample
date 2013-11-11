@@ -7,9 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "PendulumViewController.h"
 #import "MainViewController.h"
-#import "GravityViewController.h"
 
 @implementation AppDelegate
 
@@ -19,13 +17,9 @@
     // Override point for customization after application launch.
 
     MainViewController *mainViewController = [[MainViewController alloc] init];
-
-    PendulumViewController *pendulumViewController = [[PendulumViewController alloc]init];
-    GravityViewController *gravityViewController = [[GravityViewController alloc] init];
-
-    [mainViewController setViewControllers:@[gravityViewController, pendulumViewController]];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = mainViewController;
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }

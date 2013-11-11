@@ -11,7 +11,6 @@
     if (self) {
         [self buildGravityItem];
         [self addGravity];
-        [self addRestartButton];
     }
     return self;
 }
@@ -28,18 +27,5 @@
     UIGravityBehavior *gravityBehaviour = [[UIGravityBehavior alloc] initWithItems:@[ballView]];
     [animator addBehavior:gravityBehaviour];
     theAnimator = animator;
-}
-
-- (void)addRestartButton {
-    UIButton *restartButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [restartButton setTitle:@"Restart" forState:UIControlStateNormal];
-    [restartButton setFrame:CGRectMake(20, 20, 100, 40)];
-    [restartButton addTarget:self action:@selector(restart) forControlEvents:UIControlEventTouchDown];
-    [self addSubview:restartButton];
-}
-
-- (void)restart {
-    [self buildGravityItem];
-    [self addGravity];
 }
 @end

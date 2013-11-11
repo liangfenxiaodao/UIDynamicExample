@@ -5,7 +5,6 @@
 
 - (void)loadView {
     self.view = [[GravityView alloc] init];
-    [self.tabBarItem setTitle:@"Gravity"];
 }
 
 @end
