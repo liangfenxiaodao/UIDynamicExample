@@ -2,5 +2,4 @@
 
 @interface GravityView : UIView
 
-@property UIDynamicAnimator *animator;
 @end
