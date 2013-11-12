@@ -1,4 +1,4 @@
 #import <Foundation/Foundation.h>
 
-@interface CollisionView : UIView
+@interface BasicCollisionView : UIView
 @end

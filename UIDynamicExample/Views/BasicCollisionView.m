@@ -1,7 +1,7 @@
-#import "CollisionView.h"
+#import "BasicCollisionView.h"
 #import "BallView.h"
 
-@implementation CollisionView {
+@implementation BasicCollisionView {
     UIView *ballView;
     UIDynamicAnimator *_animator;
 }

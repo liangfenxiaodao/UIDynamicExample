@@ -1,6 +1,7 @@
 #import "MainViewController.h"
 #import "GravityViewController.h"
-#import "CollisionViewController.h"
+#import "BasicCollisionViewController.h"
+#import "AdvancedCollisionViewController.h"
 
 @implementation MainViewController {
     NSArray *behaviours;
@@ -33,7 +34,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return 3;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -45,8 +46,13 @@
             return;
         }
         case 1: {
-            CollisionViewController *gravityWithCollisionViewController = [[CollisionViewController alloc] init];
+            BasicCollisionViewController *gravityWithCollisionViewController = [[BasicCollisionViewController alloc] init];
             [[self navigationController] pushViewController:gravityWithCollisionViewController animated:NO];
+            return;
+        }
+        case 2: {
+            AdvancedCollisionViewController *advancedCollisionViewController = [[AdvancedCollisionViewController alloc] init];
+            [[self navigationController] pushViewController:advancedCollisionViewController animated:NO];
             return;
         }
         default:
