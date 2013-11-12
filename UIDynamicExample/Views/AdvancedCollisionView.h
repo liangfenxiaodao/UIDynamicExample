@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "BaseViewWithBall.h"
 
-@interface AdvancedCollisionView : UIView
+@interface AdvancedCollisionView : BaseViewWithBall
 @end

@@ -13,7 +13,6 @@
         behaviours = [self gravityBehaviours];
         [self.navigationItem setTitle:@"Dynamic Behaviours"];
     }
-
     return self;
 }
 
@@ -38,7 +37,6 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"%i", [indexPath row]);
     switch ([indexPath row]) {
         case 0: {
             GravityViewController *gravityViewController = [[GravityViewController alloc] init];

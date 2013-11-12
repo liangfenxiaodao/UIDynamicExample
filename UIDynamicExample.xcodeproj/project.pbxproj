@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36867476A5A2229142E0D25A /* BaseViewWithBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 368677B8ACB8306D4A48C8F9 /* BaseViewWithBall.m */; };
 		3686756C06ACC572235F87C3 /* GravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867E3A9988D686AA192D36 /* GravityViewController.m */; };
 		3686759D50AAFEBEA0786997 /* BallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867D45EBFDA080F4EF81B7 /* BallView.m */; };
 		368675E8F0104D18D8B3C91F /* GravityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867320683C7687BA6B208F /* GravityView.m */; };
-		3686760E4E0A360237E4D10C /* PendulumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867E73E06B623AAE09F678 /* PendulumViewController.m */; };
 		36867628C727E6E6B4AACA63 /* AdvancedCollisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867423360D91B71D5C6EE6 /* AdvancedCollisionViewController.m */; };
 		368676E0EF839B1EF1D75B97 /* BasicCollisionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867F09D28B53E7F4919DCA /* BasicCollisionViewController.m */; };
 		3686775E1916DCD6540F2499 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 368671A593EC171709730665 /* MainViewController.m */; };
 		36867812764907A3F2F3EEDA /* AdvancedCollisionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867199578F1081D9072F79 /* AdvancedCollisionView.m */; };
-		36867A44BC1B9F26E8380513 /* PendulumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 368675241E95B525DB75C981 /* PendulumView.m */; };
 		36867BF87EEA7BF2A94FC3DD /* BasicCollisionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867B4262C15CCD89BF5349 /* BasicCollisionView.m */; };
 		49C3E9D3182C3870002D8841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C3E9D2182C3870002D8841 /* Foundation.framework */; };
 		49C3E9D5182C3870002D8841 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C3E9D4182C3870002D8841 /* CoreGraphics.framework */; };
@@ -42,25 +41,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3686701A253292024D2B34B0 /* BaseViewWithBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewWithBall.h; sourceTree = "<group>"; };
 		36867196D14AE983965C51FC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		36867199578F1081D9072F79 /* AdvancedCollisionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedCollisionView.m; sourceTree = "<group>"; };
 		368671A593EC171709730665 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		36867200E3E8332FFD940E92 /* PendulumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendulumView.h; sourceTree = "<group>"; };
 		36867320683C7687BA6B208F /* GravityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityView.m; sourceTree = "<group>"; };
 		36867384709874EF24D828EE /* AdvancedCollisionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedCollisionViewController.h; sourceTree = "<group>"; };
 		368673E18CE48D8F215866EF /* GravityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityView.h; sourceTree = "<group>"; };
 		36867423360D91B71D5C6EE6 /* AdvancedCollisionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedCollisionViewController.m; sourceTree = "<group>"; };
 		3686742482EACF6B0AFCD013 /* BasicCollisionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicCollisionView.h; sourceTree = "<group>"; };
-		368675241E95B525DB75C981 /* PendulumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendulumView.m; sourceTree = "<group>"; };
 		368675C80046FE2F8C992C59 /* AdvancedCollisionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedCollisionView.h; sourceTree = "<group>"; };
+		368677B8ACB8306D4A48C8F9 /* BaseViewWithBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewWithBall.m; sourceTree = "<group>"; };
 		368679755B7BEE56728CF525 /* BasicCollisionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicCollisionViewController.h; sourceTree = "<group>"; };
-		36867A73E53C89CFB59DA6C1 /* PendulumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendulumViewController.h; sourceTree = "<group>"; };
 		36867ABDEE09D9542C58E46D /* GravityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityViewController.h; sourceTree = "<group>"; };
 		36867B4262C15CCD89BF5349 /* BasicCollisionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicCollisionView.m; sourceTree = "<group>"; };
 		36867D45EBFDA080F4EF81B7 /* BallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallView.m; sourceTree = "<group>"; };
 		36867E395943025C40C01040 /* BallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallView.h; sourceTree = "<group>"; };
 		36867E3A9988D686AA192D36 /* GravityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityViewController.m; sourceTree = "<group>"; };
-		36867E73E06B623AAE09F678 /* PendulumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendulumViewController.m; sourceTree = "<group>"; };
 		36867F09D28B53E7F4919DCA /* BasicCollisionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicCollisionViewController.m; sourceTree = "<group>"; };
 		49C3E9CF182C3870002D8841 /* UIDynamicExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDynamicExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C3E9D2182C3870002D8841 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -107,8 +104,6 @@
 		3686760C54320CFEC30B51EC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				36867200E3E8332FFD940E92 /* PendulumView.h */,
-				368675241E95B525DB75C981 /* PendulumView.m */,
 				36867320683C7687BA6B208F /* GravityView.m */,
 				368673E18CE48D8F215866EF /* GravityView.h */,
 				36867D45EBFDA080F4EF81B7 /* BallView.m */,
@@ -117,6 +112,8 @@
 				3686742482EACF6B0AFCD013 /* BasicCollisionView.h */,
 				36867199578F1081D9072F79 /* AdvancedCollisionView.m */,
 				368675C80046FE2F8C992C59 /* AdvancedCollisionView.h */,
+				368677B8ACB8306D4A48C8F9 /* BaseViewWithBall.m */,
+				3686701A253292024D2B34B0 /* BaseViewWithBall.h */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,8 +123,6 @@
 			children = (
 				36867ABDEE09D9542C58E46D /* GravityViewController.h */,
 				36867E3A9988D686AA192D36 /* GravityViewController.m */,
-				36867A73E53C89CFB59DA6C1 /* PendulumViewController.h */,
-				36867E73E06B623AAE09F678 /* PendulumViewController.m */,
 				36867F09D28B53E7F4919DCA /* BasicCollisionViewController.m */,
 				368679755B7BEE56728CF525 /* BasicCollisionViewController.h */,
 				36867423360D91B71D5C6EE6 /* AdvancedCollisionViewController.m */,
@@ -308,14 +303,13 @@
 				49C3E9DF182C3870002D8841 /* main.m in Sources */,
 				3686775E1916DCD6540F2499 /* MainViewController.m in Sources */,
 				3686756C06ACC572235F87C3 /* GravityViewController.m in Sources */,
-				3686760E4E0A360237E4D10C /* PendulumViewController.m in Sources */,
-				36867A44BC1B9F26E8380513 /* PendulumView.m in Sources */,
 				368675E8F0104D18D8B3C91F /* GravityView.m in Sources */,
 				3686759D50AAFEBEA0786997 /* BallView.m in Sources */,
 				36867BF87EEA7BF2A94FC3DD /* BasicCollisionView.m in Sources */,
 				368676E0EF839B1EF1D75B97 /* BasicCollisionViewController.m in Sources */,
 				36867628C727E6E6B4AACA63 /* AdvancedCollisionViewController.m in Sources */,
 				36867812764907A3F2F3EEDA /* AdvancedCollisionView.m in Sources */,
+				36867476A5A2229142E0D25A /* BaseViewWithBall.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

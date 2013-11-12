@@ -1,22 +1,22 @@
-#import "AdvancedCollisionView.h"
+#import "BaseViewWithBall.h"
 #import "BallView.h"
 
-@implementation AdvancedCollisionView {
+@implementation BaseViewWithBall {
+
 }
 
 - (id)init {
     self = [super init];
     if (self) {
-        [self buildGravityItem];
+        [self buildBall];
     }
-
     return self;
 }
 
-- (void)buildGravityItem {
+
+- (void)buildBall {
     ballView = [[BallView alloc] init];
     ballView.center = CGPointMake(100, 40);
     [self addSubview:ballView];
 }
-
 @end

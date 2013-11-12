@@ -1,26 +1,15 @@
 #import "BasicCollisionView.h"
-#import "BallView.h"
 
 @implementation BasicCollisionView {
-    UIView *ballView;
-    UIDynamicAnimator *_animator;
     BOOL collisionEnded;
 }
 
 - (id)init {
     self = [super init];
     if (self) {
-        [self buildGravityItem];
         [self addDynamicBehaviour];
     }
-
     return self;
-}
-
-- (void)buildGravityItem {
-    ballView = [[BallView alloc] init];
-    ballView.center = CGPointMake(100, 40);
-    [self addSubview:ballView];
 }
 
 - (void)addDynamicBehaviour {
@@ -32,7 +21,7 @@
     [collisionBehavior setTranslatesReferenceBoundsIntoBoundary:YES];
     [animator addBehavior:collisionBehavior];
     [collisionBehavior setCollisionDelegate:self];
-    _animator = animator;
+    theAnimator = animator;
 }
 
 - (void)collisionBehavior:(UICollisionBehavior *)behavior endedContactForItem:(id <UIDynamicItem>)item withBoundaryIdentifier:(id <NSCopying>)identifier {

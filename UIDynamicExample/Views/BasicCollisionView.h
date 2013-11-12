@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "BaseViewWithBall.h"
 
-@interface BasicCollisionView : UIView <UICollisionBehaviorDelegate>
+@interface BasicCollisionView : BaseViewWithBall <UICollisionBehaviorDelegate>
 @end

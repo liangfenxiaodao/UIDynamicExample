@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
+#import "BaseViewWithBall.h"
 
-@interface GravityView : UIView
+@interface GravityView : BaseViewWithBall
 
 @end
