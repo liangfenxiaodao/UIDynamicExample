@@ -19,7 +19,7 @@
 
 
 - (NSArray *)gravityBehaviours {
-    return @[@"Gravity", @"Basic Collision"];
+    return @[@"Gravity", @"Basic Collision", @"Advanced Collision"];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
