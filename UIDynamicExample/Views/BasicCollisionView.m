@@ -13,15 +13,14 @@
 }
 
 - (void)addDynamicBehaviour {
-    UIDynamicAnimator *animator = [[UIDynamicAnimator alloc] initWithReferenceView:self];
+    theAnimator = [[UIDynamicAnimator alloc] initWithReferenceView:self];
     UIGravityBehavior *gravityBehavior = [[UIGravityBehavior alloc] initWithItems:@[ballView]];
-    [animator addBehavior:gravityBehavior];
+    [theAnimator addBehavior:gravityBehavior];
 
     UICollisionBehavior *collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[ballView]];
     [collisionBehavior setTranslatesReferenceBoundsIntoBoundary:YES];
-    [animator addBehavior:collisionBehavior];
+    [theAnimator addBehavior:collisionBehavior];
     [collisionBehavior setCollisionDelegate:self];
-    theAnimator = animator;
 }
 
 - (void)collisionBehavior:(UICollisionBehavior *)behavior endedContactForItem:(id <UIDynamicItem>)item withBoundaryIdentifier:(id <NSCopying>)identifier {

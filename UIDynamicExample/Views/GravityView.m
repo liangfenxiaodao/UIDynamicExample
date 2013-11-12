@@ -12,9 +12,8 @@
 }
 
 - (void)addGravity {
-    UIDynamicAnimator *animator = [[UIDynamicAnimator alloc] initWithReferenceView:self];
+    theAnimator = [[UIDynamicAnimator alloc] initWithReferenceView:self];
     UIGravityBehavior *gravityBehaviour = [[UIGravityBehavior alloc] initWithItems:@[ballView]];
-    [animator addBehavior:gravityBehaviour];
-    theAnimator = animator;
+    [theAnimator addBehavior:gravityBehaviour];
 }
 @end
