@@ -17,8 +17,8 @@
 
     UIAttachmentBehavior *attachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:ballView attachedToAnchor:CGPointMake(100, 0)];
     [attachmentBehavior setLength:300];
-    [attachmentBehavior setDamping:0.05];
-    [attachmentBehavior setFrequency:6];
+    [attachmentBehavior setDamping:0.1];
+    [attachmentBehavior setFrequency:5];
     [theAnimator addBehavior:attachmentBehavior];
 
 }

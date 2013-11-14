@@ -20,7 +20,7 @@
     ballViews = [[NSMutableArray alloc] init];
     for (NSUInteger i = 0; i < 4; i++) {
         UIView *view = [[BallView alloc] init];
-        view.center = CGPointMake(40 + i * 50, 200);
+        view.center = CGPointMake(80 + i * 50, 400);
         [self addSubview:view];
         ballViews[i] = view;
     }
