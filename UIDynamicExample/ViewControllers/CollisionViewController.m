@@ -1,7 +1,7 @@
-#import "BasicCollisionViewController.h"
-#import "BasicCollisionView.h"
+#import "CollisionViewController.h"
+#import "CollisionView.h"
 
-@implementation BasicCollisionViewController
+@implementation CollisionViewController
 
 - (id)init {
     self = [super init];
@@ -13,7 +13,7 @@
 }
 
 - (void)loadView {
-    self.view = [[BasicCollisionView alloc] init];
+    self.view = [[CollisionView alloc] init];
 }
 
 @end

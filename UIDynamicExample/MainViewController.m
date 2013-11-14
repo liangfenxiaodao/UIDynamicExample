@@ -1,6 +1,6 @@
 #import "MainViewController.h"
 #import "GravityViewController.h"
-#import "BasicCollisionViewController.h"
+#import "CollisionViewController.h"
 
 @implementation MainViewController {
     NSArray *behaviours;
@@ -17,7 +17,7 @@
 
 
 - (NSArray *)gravityBehaviours {
-    return @[@"Gravity", @"Basic Collision"];
+    return @[@"Gravity", @"Collision"];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -43,7 +43,7 @@
             return;
         }
         case 1: {
-            BasicCollisionViewController *gravityWithCollisionViewController = [[BasicCollisionViewController alloc] init];
+            CollisionViewController *gravityWithCollisionViewController = [[CollisionViewController alloc] init];
             [[self navigationController] pushViewController:gravityWithCollisionViewController animated:NO];
             return;
         }

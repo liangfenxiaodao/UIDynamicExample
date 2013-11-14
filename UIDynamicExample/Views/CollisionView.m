@@ -1,6 +1,6 @@
-#import "BasicCollisionView.h"
+#import "CollisionView.h"
 
-@implementation BasicCollisionView {
+@implementation CollisionView {
     UIImageView *_imageView;
 }
 
