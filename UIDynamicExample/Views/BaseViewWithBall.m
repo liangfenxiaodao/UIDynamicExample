@@ -16,7 +16,7 @@
 
 - (void)buildBall {
     ballView = [[BallView alloc] init];
-    ballView.center = CGPointMake(100, 40);
+    ballView.center = CGPointMake(100, 100);
     [self addSubview:ballView];
 }
 @end
