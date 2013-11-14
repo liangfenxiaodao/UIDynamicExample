@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		368670CA0C009F0D1F059C7F /* bang.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867277A3CBA5B51467245A /* bang.png */; };
 		36867476A5A2229142E0D25A /* BaseViewWithBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 368677B8ACB8306D4A48C8F9 /* BaseViewWithBall.m */; };
+		368674F1613E5B8466D7DEA9 /* AdvancedAttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3686777677F30452D18AC00B /* AdvancedAttachmentView.m */; };
 		3686759D50AAFEBEA0786997 /* BallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867D45EBFDA080F4EF81B7 /* BallView.m */; };
 		368675E8F0104D18D8B3C91F /* GravityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867320683C7687BA6B208F /* GravityView.m */; };
 		3686775E1916DCD6540F2499 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 368671A593EC171709730665 /* MainViewController.m */; };
@@ -48,7 +49,9 @@
 		36867320683C7687BA6B208F /* GravityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityView.m; sourceTree = "<group>"; };
 		368673E18CE48D8F215866EF /* GravityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityView.h; sourceTree = "<group>"; };
 		3686742482EACF6B0AFCD013 /* CollisionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionView.h; sourceTree = "<group>"; };
+		3686777677F30452D18AC00B /* AdvancedAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedAttachmentView.m; sourceTree = "<group>"; };
 		368677B8ACB8306D4A48C8F9 /* BaseViewWithBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewWithBall.m; sourceTree = "<group>"; };
+		36867B33DBB6BF02774E19E2 /* AdvancedAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedAttachmentView.h; sourceTree = "<group>"; };
 		36867B4262C15CCD89BF5349 /* CollisionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollisionView.m; sourceTree = "<group>"; };
 		36867C3485AF735A3908C6A9 /* AttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentView.h; sourceTree = "<group>"; };
 		36867D45EBFDA080F4EF81B7 /* BallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallView.m; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				3686701A253292024D2B34B0 /* BaseViewWithBall.h */,
 				368671F44B8F18A61F0BD490 /* AttachmentView.m */,
 				36867C3485AF735A3908C6A9 /* AttachmentView.h */,
+				3686777677F30452D18AC00B /* AdvancedAttachmentView.m */,
+				36867B33DBB6BF02774E19E2 /* AdvancedAttachmentView.h */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 				36867476A5A2229142E0D25A /* BaseViewWithBall.m in Sources */,
 				36867B128C249E5B2ECC54A0 /* AttachmentView.m in Sources */,
 				36867FAF75CAC11275429C03 /* GeneralViewController.m in Sources */,
+				368674F1613E5B8466D7DEA9 /* AdvancedAttachmentView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

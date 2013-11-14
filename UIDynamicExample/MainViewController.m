@@ -16,7 +16,7 @@
 
 
 - (NSArray *)gravityBehaviours {
-    return @[@"Gravity", @"Collision", @"Attachment"];
+    return @[@"Gravity", @"Collision", @"Attachment", @"Advanced Attachment"];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -49,6 +49,11 @@
         case 2: {
             GeneralViewController *attachmentViewController = [[GeneralViewController alloc] initWithViewName:@"AttachmentView" andTitle:@"Attachment"];
             [[self navigationController] pushViewController:attachmentViewController animated:NO];
+            return;
+        }
+        case 3: {
+            GeneralViewController *advancedAttachmentViewController = [[GeneralViewController alloc] initWithViewName:@"AdvancedAttachmentView" andTitle:@"Advanced Attachment"];
+            [[self navigationController] pushViewController:advancedAttachmentViewController animated:NO];
             return;
         }
         default:
