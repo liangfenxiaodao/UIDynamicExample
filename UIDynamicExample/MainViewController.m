@@ -1,64 +1,48 @@
 #import "MainViewController.h"
 #import "GeneralViewController.h"
 
+#define keyItemName @"name"
+#define keyClassName @"class"
+
 @implementation MainViewController {
-    NSArray *behaviours;
+    NSArray *items;
 }
 
 - (id)init {
     self = [super init];
     if (self) {
-        behaviours = [self gravityBehaviours];
+        items = [self setupItems];
         [self.navigationItem setTitle:@"Dynamic Behaviours"];
     }
     return self;
 }
 
 
-- (NSArray *)gravityBehaviours {
-    return @[@"Gravity", @"Collision", @"Attachment", @"Advanced Attachment"];
+- (NSArray *)setupItems {
+    return @[@{keyItemName : @"Gravity", keyClassName : @"GravityView"},
+            @{keyItemName : @"Collision", keyClassName : @"CollisionView"},
+            @{keyItemName : @"Attachment", keyClassName : @"AttachmentView"},
+            @{keyItemName : @"Advanced Attachment", keyClassName : @"AdvancedAttachmentView"}];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *behaviour = behaviours[(NSUInteger) [indexPath row]];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
-    [cell.textLabel setText:behaviour];
+    [cell.textLabel setText:items[[indexPath row]][keyItemName]];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [behaviours count];
+    return [items count];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    switch ([indexPath row]) {
-        case 0: {
-            GeneralViewController *gravityViewController = [[GeneralViewController alloc] initWithViewName:@"GravityView" andTitle:@"Gravity"];
-            [[self navigationController] pushViewController:gravityViewController animated:NO];
-            return;
-        }
-        case 1: {
-            GeneralViewController *collisionViewController = [[GeneralViewController alloc] initWithViewName:@"CollisionView" andTitle:@"Collision"];
-            [[self navigationController] pushViewController:collisionViewController animated:NO];
-            return;
-        }
-        case 2: {
-            GeneralViewController *attachmentViewController = [[GeneralViewController alloc] initWithViewName:@"AttachmentView" andTitle:@"Attachment"];
-            [[self navigationController] pushViewController:attachmentViewController animated:NO];
-            return;
-        }
-        case 3: {
-            GeneralViewController *advancedAttachmentViewController = [[GeneralViewController alloc] initWithViewName:@"AdvancedAttachmentView" andTitle:@"Advanced Attachment"];
-            [[self navigationController] pushViewController:advancedAttachmentViewController animated:NO];
-            return;
-        }
-        default:
-            return;
-    }
+    NSDictionary *item = items[[indexPath row]];
+    GeneralViewController *viewController = [[GeneralViewController alloc] initWithViewName:item[keyClassName] andTitle:item[keyItemName]];
+    [[self navigationController] pushViewController:viewController animated:NO];
 }
 
 @end
