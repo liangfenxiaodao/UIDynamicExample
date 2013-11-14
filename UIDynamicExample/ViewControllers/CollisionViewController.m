@@ -6,7 +6,7 @@
 - (id)init {
     self = [super init];
     if (self) {
-        [self.navigationItem setTitle:@"Basic Collision"];
+        [self.navigationItem setTitle:@"Collision"];
     }
 
     return self;
