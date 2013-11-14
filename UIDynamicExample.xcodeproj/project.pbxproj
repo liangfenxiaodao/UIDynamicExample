@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		368670CA0C009F0D1F059C7F /* bang.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867277A3CBA5B51467245A /* bang.png */; };
 		36867476A5A2229142E0D25A /* BaseViewWithBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 368677B8ACB8306D4A48C8F9 /* BaseViewWithBall.m */; };
 		3686756C06ACC572235F87C3 /* GravityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867E3A9988D686AA192D36 /* GravityViewController.m */; };
 		3686759D50AAFEBEA0786997 /* BallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867D45EBFDA080F4EF81B7 /* BallView.m */; };
@@ -42,6 +43,7 @@
 		3686701A253292024D2B34B0 /* BaseViewWithBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewWithBall.h; sourceTree = "<group>"; };
 		36867196D14AE983965C51FC /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		368671A593EC171709730665 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		36867277A3CBA5B51467245A /* bang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bang.png; sourceTree = "<group>"; };
 		36867320683C7687BA6B208F /* GravityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityView.m; sourceTree = "<group>"; };
 		368673E18CE48D8F215866EF /* GravityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityView.h; sourceTree = "<group>"; };
 		3686742482EACF6B0AFCD013 /* BasicCollisionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicCollisionView.h; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				36867196D14AE983965C51FC /* MainViewController.h */,
 				36867A4F6D6D00F660D17072 /* ViewControllers */,
 				3686760C54320CFEC30B51EC /* Views */,
+				36867277A3CBA5B51467245A /* bang.png */,
 			);
 			path = UIDynamicExample;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 			files = (
 				49C3E9DD182C3870002D8841 /* InfoPlist.strings in Resources */,
 				49C3E9E5182C3870002D8841 /* Images.xcassets in Resources */,
+				368670CA0C009F0D1F059C7F /* bang.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
