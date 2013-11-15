@@ -22,7 +22,8 @@
     return @[@{keyItemName : @"Gravity", keyClassName : @"GravityView"},
             @{keyItemName : @"Collision", keyClassName : @"CollisionView"},
             @{keyItemName : @"Attachment", keyClassName : @"AttachmentView"},
-            @{keyItemName : @"Advanced Attachment", keyClassName : @"AdvancedAttachmentView"}];
+            @{keyItemName : @"Advanced Attachment", keyClassName : @"AdvancedAttachmentView"},
+            @{keyItemName : @"Snap", keyClassName : @"SnapView"}];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

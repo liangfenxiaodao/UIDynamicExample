@@ -15,6 +15,7 @@
 		3686775E1916DCD6540F2499 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 368671A593EC171709730665 /* MainViewController.m */; };
 		36867B128C249E5B2ECC54A0 /* AttachmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 368671F44B8F18A61F0BD490 /* AttachmentView.m */; };
 		36867BF87EEA7BF2A94FC3DD /* CollisionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867B4262C15CCD89BF5349 /* CollisionView.m */; };
+		36867F489959D69986906F7A /* SnapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 368677AFB50647B915E69099 /* SnapView.m */; };
 		36867FAF75CAC11275429C03 /* GeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867E83A6D2325CEE84E199 /* GeneralViewController.m */; };
 		49C3E9D3182C3870002D8841 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C3E9D2182C3870002D8841 /* Foundation.framework */; };
 		49C3E9D5182C3870002D8841 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C3E9D4182C3870002D8841 /* CoreGraphics.framework */; };
@@ -49,7 +50,9 @@
 		36867320683C7687BA6B208F /* GravityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravityView.m; sourceTree = "<group>"; };
 		368673E18CE48D8F215866EF /* GravityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravityView.h; sourceTree = "<group>"; };
 		3686742482EACF6B0AFCD013 /* CollisionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollisionView.h; sourceTree = "<group>"; };
+		368674C3276016F775A49EB5 /* SnapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapView.h; sourceTree = "<group>"; };
 		3686777677F30452D18AC00B /* AdvancedAttachmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedAttachmentView.m; sourceTree = "<group>"; };
+		368677AFB50647B915E69099 /* SnapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapView.m; sourceTree = "<group>"; };
 		368677B8ACB8306D4A48C8F9 /* BaseViewWithBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewWithBall.m; sourceTree = "<group>"; };
 		36867B33DBB6BF02774E19E2 /* AdvancedAttachmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedAttachmentView.h; sourceTree = "<group>"; };
 		36867B4262C15CCD89BF5349 /* CollisionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollisionView.m; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				36867C3485AF735A3908C6A9 /* AttachmentView.h */,
 				3686777677F30452D18AC00B /* AdvancedAttachmentView.m */,
 				36867B33DBB6BF02774E19E2 /* AdvancedAttachmentView.h */,
+				368677AFB50647B915E69099 /* SnapView.m */,
+				368674C3276016F775A49EB5 /* SnapView.h */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 				36867B128C249E5B2ECC54A0 /* AttachmentView.m in Sources */,
 				36867FAF75CAC11275429C03 /* GeneralViewController.m in Sources */,
 				368674F1613E5B8466D7DEA9 /* AdvancedAttachmentView.m in Sources */,
+				36867F489959D69986906F7A /* SnapView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
