@@ -1,4 +1,4 @@
 #import <Foundation/Foundation.h>
 
-@interface AdvancedAttachmentView : UIView
+@interface AdvancedAttachmentView : UIView <UICollisionBehaviorDelegate>
 @end
