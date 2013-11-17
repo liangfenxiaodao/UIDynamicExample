@@ -60,7 +60,6 @@
 
     UICollisionBehavior *collisionBehavior = [[UICollisionBehavior alloc] initWithItems:ballViews];
     [collisionBehavior setTranslatesReferenceBoundsIntoBoundary:YES];
-    [collisionBehavior setCollisionDelegate:self];
     [animator addBehavior:collisionBehavior];
 }
 
