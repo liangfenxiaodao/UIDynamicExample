@@ -23,7 +23,8 @@
             @{keyItemName : @"Collision", keyClassName : @"CollisionView"},
             @{keyItemName : @"Attachment", keyClassName : @"AttachmentView"},
             @{keyItemName : @"Advanced Attachment", keyClassName : @"AdvancedAttachmentView"},
-            @{keyItemName : @"Snap", keyClassName : @"SnapView"}];
+            @{keyItemName : @"Snap", keyClassName : @"SnapView"},
+            @{keyItemName : @"Push", keyClassName : @"PushView"}];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
