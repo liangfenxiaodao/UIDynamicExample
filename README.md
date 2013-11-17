@@ -5,12 +5,24 @@ examples of UIDynamic behaviour of iOS7, including:
 
 Gravity
 
+<img src="snapshots/gravity.gif" width="478" height="740"/>
+
 Collision
+
+<img src="snapshots/collision.gif" width="476" height="738"/>
 
 Attachment
 
+<img src="snapshots/attachment.gif" width="476" height="738"/>
+
+Advanced attachment
+
+
+<img src="snapshots/advanced_attachment.gif" width="476" height="738"/>
+
 Snap
 
+<img src="snapshots/snap.gif" width="476" height="738"/>
 
 References:
 
