@@ -15,22 +15,19 @@
 }
 
 - (void)addBar {
-    barView = [[UIView alloc] initWithFrame:CGRectMake(140, 100, 10, 100)];
+    barView = [[UIView alloc] initWithFrame:CGRectMake(140, 200, 10, 100)];
     [barView setBackgroundColor:[UIColor lightGrayColor]];
     [self addSubview:barView];
 
     UIPanGestureRecognizer *recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(aaa:)];
     [self addGestureRecognizer:recognizer];
-
-    UIAttachmentBehavior *attachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:barView attachedToAnchor:CGPointMake(0, 0)];
-    [theAnimator addBehavior:attachmentBehavior];
 }
 
 - (void)aaa:(UIPanGestureRecognizer *)gestureRecognizer {
     if (gestureRecognizer.state == UIGestureRecognizerStateEnded) {
         if ([self gestureHitsBarView:gestureRecognizer]) {
             UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[barView] mode:UIPushBehaviorModeInstantaneous];
-            [pushBehavior setPushDirection:CGVectorMake([gestureRecognizer velocityInView:self].x /1000.f, 0)];
+            [pushBehavior setPushDirection:CGVectorMake([gestureRecognizer velocityInView:self].x /5000.f, 0)];
             [theAnimator addBehavior:pushBehavior];
         }
     }

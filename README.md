@@ -24,6 +24,10 @@ Snap
 
 <img src="snapshots/snap.gif" width="476" height="738"/>
 
+Push
+
+<img src="snapshots/push.gif" width="476" height="738"/>
+
 References:
 
 http://www.shinobicontrols.com/blog/posts/2013/09/19/ios7-day-by-day-day-0-uikit-dynamics/
