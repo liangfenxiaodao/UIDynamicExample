@@ -19,11 +19,11 @@
     [barView setBackgroundColor:[UIColor lightGrayColor]];
     [self addSubview:barView];
 
-    UIPanGestureRecognizer *recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(aaa:)];
+    UIPanGestureRecognizer *recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
     [self addGestureRecognizer:recognizer];
 }
 
-- (void)aaa:(UIPanGestureRecognizer *)gestureRecognizer {
+- (void)handlePanGesture:(UIPanGestureRecognizer *)gestureRecognizer {
     if (gestureRecognizer.state == UIGestureRecognizerStateEnded) {
         if ([self gestureHitsBarView:gestureRecognizer]) {
             UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[barView] mode:UIPushBehaviorModeInstantaneous];
