@@ -1,34 +1,42 @@
 UIDynamicExample
 ================
 
-examples of UIDynamic behaviour of iOS7, including:
+This project aims to provide examples of UIDynamic behaviour of iOS7, including:
 
-Gravity
+- Gravity
+- Collision
+- Attachment
+- Snap
+- Push
+
+Please see the gifs below for more information:
+
+###Gravity
 
 <img src="snapshots/gravity.gif" width="478" height="740"/>
 
-Collision
+###Collision
 
 <img src="snapshots/collision.gif" width="476" height="738"/>
 
-Attachment
+###Attachment
 
 <img src="snapshots/attachment.gif" width="476" height="738"/>
 
-Advanced attachment
-
+###Advanced attachment
 
 <img src="snapshots/advanced_attachment.gif" width="476" height="738"/>
 
-Snap
+###Snap
 
 <img src="snapshots/snap.gif" width="476" height="738"/>
 
-Push
+###Push
 
 <img src="snapshots/push.gif" width="476" height="738"/>
 
-References:
+
+##References:
 
 http://www.shinobicontrols.com/blog/posts/2013/09/19/ios7-day-by-day-day-0-uikit-dynamics/
 
